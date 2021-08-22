@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/31033656c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Café Java</title>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="title">PROFILE</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                        <span class="title">MESSAGE</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                        <span class="title">HELP</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">SETTING</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">SIGN OUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle">
+
+        </div>
+        <div class="circle"></div>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+
+                <div>
+                    <a href="#" class="nav__logo">Cafe Java</a>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+               
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <main class="l-main">
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Coffee<br> Drink 3D</h1>
+                    <p class="home__description">Let's help discover the best coffee drink <br> of the week. <br>Like
+                        everyone else who makes the mistake of getting older, <br>I begin each day with coffee and
+                        obituaries</p>
+                    <a href="#" class="home__button">Get Started</a>
+                </div>
+                <div class="imgbox">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><span class="text">Everything</span><img
+                                    src="./images/coffee  (1).webp"></div>
+                            <div class="swiper-slide"><span class="text">Is</span><img src="./images/juice_PNG7190.png">
+                            </div>
+                            <div class="swiper-slide"><span class="text">Available</span><img src="./images/img1.png">
+                            </div>
+                            <div class="swiper-slide"><span class="text">But, </span><img
+                                    src="./images/wineglass_PNG2855.png"> </div>
+                            <div class="swiper-slide"><span class="text">You</span><img
+                                    src="./images/ice_cream_PNG5088.png"></div>
+                            <div class="swiper-slide"><span class="text">Are</span><img
+                                    src="./images/mug_coffee_PNG16815.png"></div>
+                            <div class="swiper-slide"><span class="text">Absent.</span><img
+                                    src="./images/ice_cream_PNG5100.png"></div>
+                            <div class="swiper-slide"><span class="text">So,</span><img
+                                    src="./images/ice_cream_PNG98196.png"></div>
+                            <div class="swiper-slide"><span class="text">Come Fast</span><img
+                                    src="./images/chocolate_cake_PNG7.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com"><img src="./icons/facebook.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com"><img src="./icons/instagram.png" alt=""></a></li>
+                <li><a href="https://www.twitter.com"><img src="./icons/twitter.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com"><img src="./icons/youtube.png" alt=""></a></li>
+            </ul>
+        </section>
+    </div>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+
+    </script>
+</body>
+
+</html>
